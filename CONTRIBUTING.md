@@ -1,4 +1,4 @@
-# Ho trovatoo un errore nel libro!
+# Ho trovato un errore nel libro!
 
 [TBD]
 
