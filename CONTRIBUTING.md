@@ -16,6 +16,7 @@
 
 # Ho trovato un errore in uno dei sorgenti di questo repository!
 
+0. Crea una issue per discutere dell'errore
 1. Forka questo repository
 2. Fai le correzioni che ritieni utili
 3. Crea una Pull Request
