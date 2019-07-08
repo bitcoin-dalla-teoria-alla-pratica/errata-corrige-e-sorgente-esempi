@@ -7,10 +7,10 @@ assignees: ''
 
 ---
 
-Errore o suggerimento di modifica?
+*Che tipo di segnalazione stai facendo?*
+- [ ] Errore
+- [ ] Modifica
 
-Quale e' la domanda in questione?
+*Quale e' la versione della domanda che proponi?*
 
-Quale e' la versione della domanda che proponi?
-
-Quale e' la versione della risposta che proponi?
+*Quale e' la versione della risposta che proponi?*
