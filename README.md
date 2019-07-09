@@ -6,7 +6,7 @@ In questo repository si trovano i sorgenti mostrati durante il corso Udemy "Bitc
 
 [https://www.udemy.com/bitcoin-blockchain-corso-completo-teoria-pratica-esempi-tutorial/](http://bit.ly/2POxpNK)
 
-tali sorgenti sono anche ripresi nel libro disponibile su [Amazon](https://www.amazon.it/gp/product/B07SNNNL2P/)
+tali sorgenti sono anche ripresi nel libro disponibile su [Amazon](https://www.amazon.it/gp/product/B07SNNNL2P/) e sul nostro [sito ufficiale](https://www.corsobitcoin.com/prodotto/libro-bitcoin-dalla-teoria-alla-pratica) con la possibità di pagare in bitcoin 
 
 # Ho trovato un errore!
 
