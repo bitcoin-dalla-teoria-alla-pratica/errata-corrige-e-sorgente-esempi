@@ -6,6 +6,7 @@ In questa pagina raccogliamo tutte le segnalazioni del libro Bitcoin 199 domande
 Al seguente link puoi consultare tutta l'errata corrige
 
 https://github.com/bitcoin-dalla-teoria-alla-pratica/errata-corrige-e-sorgente-esempi/issues?q=label%3A199
+
 --
 
 
