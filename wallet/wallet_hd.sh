@@ -5,7 +5,7 @@ YELLOW="\033[1;93m"
 MAGENTA="\033[1;95m"
 BLU="\033[1;94m"
 NOCOLOR="\033[0m"
-STARTBGCOLOR="\033[44m"
+STARTBGCOLOR="\033[33m"
 
 
 #mnemonic che viene passata al codice php
@@ -57,6 +57,7 @@ printf "CHAIN CODE = $CHAIN"
 # ###############################################################
 #
 echo  "\n \n ${STARTBGCOLOR}######### DERIVATION M/44' #########${NOCOLOR}"
+#Andare su iancoleman mettere m e cercare l address m/44'
 printf "\n\n"
 
 #Padding come da documentazione
@@ -121,6 +122,7 @@ printf "child chain code (right 256 bit) =  $CHAIN_44\n"
 printf "parent private key + LEFT 256 BITS = child private key = $PK_44 \n"
 printf "Chiave pubblica compressa derivata  =  $PB_44 \n"
 printf "Index Number =  $HARDENED_INDEX \n"
+
 
 
 #
@@ -202,6 +204,7 @@ printf "Index Number =  $HARDENED_INDEX \n"
 printf  "${STARTBGCOLOR}######### DERIVATION M/44'/0'/0' ######### ${NOCOLOR}"
 printf  "\n\n"
 
+
 # account' 80000000  Hardened
 HARDENED_OFFSET_INDEX=80000000
 #account'
@@ -211,11 +214,10 @@ DERIVATION=00
 DERIVATION_HEX=`echo "obase=16;ibase=10; $DERIVATION" | bc`
 HARDENED_INDEX=`echo "obase=16;ibase=16;$HARDENED_OFFSET_INDEX+$DERIVATION_HEX" | bc| awk '{ len = (8 - length % 8) % 8; printf "%.*s%s\n", len, "00000000", $0}'`
 
-
-HMAC_0_0=$(printf $HARDENED_CHILD_PAD$PK_0$HARDENED_INDEX|xxd -r -p | openssl dgst -sha512 -hmac `printf $CHAIN_0 |xxd -r -p` | awk '{print $2}')
-
+HMAC_0_0=$(printf $HARDENED_CHILD_PAD$PK_0$HARDENED_INDEX|xxd -r -p | openssl dgst -sha512 -hmac "`printf $CHAIN_0 |xxd -r -p`" | awk '{print $2}')
 LEFT_256_BITS=`printf $HMAC_0_0 | head -c 64`
 CHAIN_0_0=`printf $HMAC_0_0 | tail -c 64`
+
 printf "left 256 bits 44'/0'/0' => $LEFT_256_BITS \n"
 printf "child chain code 44'/0'/0' => $CHAIN_0_0\n"
 
@@ -322,7 +324,6 @@ printf "child chain code (right 256 bit) =$CHAIN_0_0_0\n"
 printf "parent private key + LEFT 256 BITS = child private key = $PK_0_0_0 \n"
 printf "Chiave pubblica compressa derivata  =  $PB_0_0_0 \n"
 printf "Index Number =  $HARDENED_INDEX \n"
-
 ##############################################################
 # Derivazione NON Hardened: Nella funzione HMAC NON C'E' PADDING E USO LA PARENT PUBLIC KEY INVECE CHE LA PARENT PRIVATE KEY
 #per verificalo su iancoleman, inserire m/44'/0'/0'/0 e non spuntare Use Hardened
