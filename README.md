@@ -2,11 +2,7 @@
 
 # Cosa?
 
-In questo repository si trovano i sorgenti mostrati durante il video–corso [https://vimeo.com/420439734]("Bitcoin dalla teoria alla pratica") e all'interno del libro stesso
-
-[https://www.udemy.com/bitcoin-blockchain-corso-completo-teoria-pratica-esempi-tutorial/](http://bit.ly/2POxpNK)
-
-tali sorgenti sono anche ripresi nel libro disponibile su [Amazon](https://www.amazon.it/gp/product/B07SNNNL2P/) e sul nostro [sito ufficiale](https://www.corsobitcoin.com/prodotto/libro-bitcoin-dalla-teoria-alla-pratica) con la possibità di pagare in bitcoin 
+In questo repository si trovano i sorgenti mostrati durante il video–corso [Bitcoin dalla teoria alla pratica](https://vimeo.com/420439734) e all'interno del libro disponibile su [Amazon](https://www.amazon.it/gp/product/B07SNNNL2P/) e sul nostro [sito ufficiale](https://www.corsobitcoin.com/prodotto/libro-bitcoin-dalla-teoria-alla-pratica) con la possibità di pagare in bitcoin 
 
 # Ho trovato un errore!
 
