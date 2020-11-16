@@ -10,7 +10,7 @@ tali sorgenti sono anche ripresi nel libro disponibile su [Amazon](https://www.a
 
 # Ho trovato un errore!
 
-Allora [leggiti le linee guida per contribuire](CONTRIBUTING.md)
+Allora [dai un'occhiata le linee guida per contribuire](CONTRIBUTING.md)
 
 ### Contatti
 - [Linkedin](http://bit.ly/2H38ovs)
@@ -18,6 +18,6 @@ Allora [leggiti le linee guida per contribuire](CONTRIBUTING.md)
 - [Facebook](https://www.facebook.com/satoshiwantsyou)
 - [Medium](https://medium.com/@satoshiwantsyou)
 - [Sito ufficiale](https://www.corsobitcoin.com)
+- [Canale YouTube](https://www.youtube.com/BitcoinInAction)
 - [Email](corsobitcoin@gmail.com)
 - [Alessio Barnini](https://www.linkedin.com/in/alessiobarnini/)
-
