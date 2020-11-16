@@ -2,7 +2,7 @@
 
 # Cosa?
 
-In questo repository si trovano i sorgenti mostrati durante il corso Udemy "Bitcoin dalla teoria alla pratica"
+In questo repository si trovano i sorgenti mostrati durante il video–corso [https://vimeo.com/420439734]"Bitcoin dalla teoria alla pratica" e all'interno del libro stesso
 
 [https://www.udemy.com/bitcoin-blockchain-corso-completo-teoria-pratica-esempi-tutorial/](http://bit.ly/2POxpNK)
 
