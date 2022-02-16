@@ -1,0 +1,16 @@
+mkdir -p Alice
+mkdir -p Bob
+cd Alice
+openssl genrsa -out privata_alice.pem 2048
+openssl rsa -in privata_alice.pem -outform PEM -pubout -out pubblica_alice.pem
+cat privata_alice.pem
+cat pubblica_alice.pem
+cp pubblica_alice.pem ../Bob && cd ../Bob
+echo "W Bitcoin" >> messaggio.txt
+cat messaggio.txt
+cat messaggio.txt | openssl rsautl -encrypt -pubin -inkey pubblica_alice.pem > messaggio_crittato.txt
+cat messaggio_crittato.txt
+hexdump -C messaggio_crittato.txt
+mv messaggio_crittato.txt ../Alice && cd ../Alice
+cat messaggio_crittato.txt | openssl rsautl -decrypt -inkey privata_alice.pem > messaggio_decrittato.txt
+cat messaggio_decrittato.txt

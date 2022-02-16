@@ -1,0 +1,18 @@
+mkdir -p Alice
+mkdir -p Bob
+cd Alice
+openssl ecparam -list_curves
+openssl ecparam -list_curves | grep secp256k1
+openssl ecparam -genkey -name secp256k1 -rand /dev/urandom -noout -out privata_alice.pem
+openssl ec -in privata_alice.pem -pubout -out pubblica_alice.pem
+cat privata_alice.pem
+cat pubblica_alice.pem
+echo "Bob Ti amo!" > messaggio.txt
+cat messaggio.txt
+openssl dgst -sha256 -sign privata_alice.pem messaggio.txt > firma_alice.bin
+xxd -p firma_alice.bin |  tr -d '\n'  | awk '{print $1}'
+cp ./{pubblica_alice.pem,firma_alice.bin,messaggio.txt} ../Bob && cd ../Bob
+openssl dgst -sha256 -verify pubblica_alice.pem -signature firma_alice.bin messaggio.txt
+echo "bla bla bla!" >> messaggio.txt
+cat messaggio.txt
+openssl dgst -sha256 -verify pubblica_alice.pem -signature firma_alice.bin messaggio.txt
