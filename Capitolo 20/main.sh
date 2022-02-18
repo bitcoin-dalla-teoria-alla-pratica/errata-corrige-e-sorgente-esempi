@@ -1,6 +1,3 @@
-VERSION_PREFIX=80
-WIF_SUFFIX=01
-
 printf "\n\n \e[45m CREO LA CHIAVE PRIVATA e la salvo in corso_priv.pem \e[0m\n\n"
 openssl ecparam -genkey -name secp256k1 -rand /dev/urandom -out corso_priv.pem
 cat corso_priv.pem
