@@ -46,3 +46,5 @@ Temporary Items
 .history
 .ionide
 
+*.key
+*.pem
