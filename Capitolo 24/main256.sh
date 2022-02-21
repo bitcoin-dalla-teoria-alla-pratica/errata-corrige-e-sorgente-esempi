@@ -2,12 +2,12 @@ printf "\n\n \e[41m Generiamo il seed dall entropia \e[0m\n\n"
 sleep 5
 
 printf "\n\n \e[45m partiamo dall'entropia \e[0m\n\n"
-EN=0168071cf29dbdf232de82fa34acb933
+EN=$(xxd -u -l 32 -p -c 32 /dev/urandom)
 printf $EN
 sleep 2
 
 printf "\n\n \e[45m Applichiamo lo SHA256 per ottenere il checksum. \e[0m\n\n"
-CHECK=$(printf $EN | xxd -r -p | sha256sum -b | head -c 1)
+CHECK=$(printf $EN | xxd -r -p | sha256sum -b | head -c 2)
 printf $CHECK
 sleep 2
 
